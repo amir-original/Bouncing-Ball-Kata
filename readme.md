@@ -1,5 +1,6 @@
-#Bouncing Balls Kata
-##Description
+# Bouncing Balls Kata 
+## Description
+
 A child is playing with a ball on the nth floor of a tall building. The height of this floor, h, is known.
 
 He drops the ball out of the window. The ball bounces (for example), to two-thirds of its height (a bounce of 0.66).
@@ -25,3 +26,4 @@ Examples:
 
 (Condition 2) not fulfilled).
 ```
+more info : https://www.codewars.com/kata/5544c7a5cb454edb3c000047
