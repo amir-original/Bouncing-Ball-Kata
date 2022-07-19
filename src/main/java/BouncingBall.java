@@ -14,17 +14,15 @@ public class BouncingBall {
     }
 
     public int bouncingBall() {
-        if (!areAllConditionsFullFilled()) return NOT_FULFILLED;
-
-        return howManyTimesWillTheMotherSeeTheBall();
+        return areAllConditionsFullFilled() ? howManyTimesWillTheMotherSeeTheBall() : NOT_FULFILLED;
     }
 
     private int howManyTimesWillTheMotherSeeTheBall() {
-        int counts = 0;
+        int result = 0;
         for (double rebound = height; rebound > window; rebound *= bounce)
-            counts += see(rebound);
+            result += see(rebound);
 
-        return counts;
+        return result;
     }
 
     private int see(double rebound) {
@@ -36,7 +34,7 @@ public class BouncingBall {
     }
 
     private boolean areAllConditionsFullFilled() {
-        return isHeightGreaterThanZero() && isaBounceGreaterThanZeroAndLessThanOne() && isWindowParamLessThanHeight ();
+        return isHeightGreaterThanZero() && isaBounceGreaterThanZeroAndLessThanOne() && isWindowParamLessThanHeight();
     }
 
     private boolean isHeightGreaterThanZero() {
