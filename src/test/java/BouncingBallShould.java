@@ -26,5 +26,7 @@ public class BouncingBallShould {
     void calculate_bounce() {
         assertThat(new BouncingBall(3.0,0.66,1.5).bouncingBall()).isEqualTo(3);
         assertThat(new BouncingBall(30.0,0.66,1.5).bouncingBall()).isEqualTo(15);
+        assertThat(new BouncingBall(30, 0.75, 1.5).bouncingBall()).isEqualTo(21);
+        assertThat(new BouncingBall(40, 0.4, 10).bouncingBall()).isEqualTo(3);
     }
 }
