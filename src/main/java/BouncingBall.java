@@ -18,11 +18,11 @@ public class BouncingBall {
     }
 
     private int howManyTimesWillTheMotherSeeTheBall() {
-        int result = 0;
+        int seen = 0;
         for (double rebound = height; rebound > window; rebound *= bounce)
-            result += see(rebound);
+            seen += see(rebound);
 
-        return result;
+        return seen;
     }
 
     private int see(double rebound) {
